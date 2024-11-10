@@ -3,9 +3,27 @@
   <head>
     <meta charset="UTF-8">
     <title>Love Calculator</title>
+	<style>
+		body {font-family: monospace}
+		div {margin: 5px}
+	</style>
   </head>
   <body>
-	Love Calculator
+	<h1>Love Calculator</h1>
+	<div>
+		<label for="name_p1">Your first and last name: </label><br>
+		<input type="input" id="name_p1"></input><br>
+		<label for="name_p2">Another person's first and last name: </label><br>
+		<input type="input" id="name_p2"></input><br>
+	</div>
+	<div>
+	<button onclick="calculate()">Calculate</button>
+	</div>
+	<div id="result" style="display:none">
+		The score is <span id="score" style="font-weight: bold"></span>.<br>
+		The score as a percentage within the 40-60 range is <span style="font-weight: bold"><span id="percentage"></span>%</span>.
+	</div>
+
   </body>
   <script src="calculator.js"></script>
 </html>
