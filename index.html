@@ -4,8 +4,15 @@
     <meta charset="UTF-8">
     <title>Love Calculator</title>
 	<style>
-		body {font-family: monospace}
+		body {
+			font-family: monospace;
+			position: static;
+		}
 		div {margin: 5px}
+		.bottom {
+			position: absolute;
+			bottom: 0;
+		}
 	</style>
   </head>
   <body>
@@ -21,9 +28,12 @@
 	</div>
 	<div id="result" style="display:none">
 		The score is <span id="score" style="font-weight: bold"></span>.<br>
-		The score as a percentage within the 40-60 range is <span style="font-weight: bold"><span id="percentage"></span>%</span>.
+		The score as a percentage within the 40-60 range is 
+		<span style="font-weight: bold"><span id="percentage"></span>%</span>.
 	</div>
-
+	<div class="bottom">
+		*Credits to <a href="https://scratch.mit.edu/users/StarCounter1/">StarCounter1</a> for the original idea.
+	</div>
   </body>
   <script src="calculator.js"></script>
 </html>
